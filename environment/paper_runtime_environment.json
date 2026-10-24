@@ -1,0 +1,33 @@
+{
+  "python": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.4.6",
+  "scipy": "1.17.0",
+  "sklearn": "1.8.0",
+  "numba": "0.65.0",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 198 Stepping 2, GenuineIntel",
+  "threads": 1,
+  "included": [
+    "raw_read_decode_s",
+    "coverage_reference_smooth_s",
+    "features_s",
+    "fit_model_s",
+    "full_assignment_s",
+    "save_results_s"
+  ],
+  "excluded": [
+    "daily frame selection/header search",
+    "Z audit and quality-rule discovery",
+    "Python startup/import and JIT warmup",
+    "plotting",
+    "independent QA and full feature snapshots",
+    "SARscape satellite processing",
+    "all within-day high-frequency raw frames"
+  ],
+  "cache_condition": "ordinary OS file cache; no forced cold-cache eviction",
+  "fitting_protocol": "Fit feature PCA if applicable and clustering on fixed 50k sample; assign every eligible pixel. Not full-million model fitting.",
+  "CPU_model_reported_in_manuscript": "Intel Core Ultra 7 255HX",
+  "memory_reported_in_prior_environment_GiB": 31.4,
+  "source_of_timings": "Archived original experiment; not rerun by the public demo",
+  "public_code_scope": "Starts after proprietary decoding; cannot reproduce original end-to-end raw-file timings"
+}

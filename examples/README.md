@@ -1,0 +1,1 @@
+These NPZ arrays and the demonstration series are generated from a mathematical model by code/generate_demo.py. They contain no field observations, mine pixels, or proprietary radar records. They validate software execution only and are not evidence for the manuscript findings.

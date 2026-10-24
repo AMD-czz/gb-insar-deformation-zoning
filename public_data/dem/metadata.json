@@ -1,0 +1,34 @@
+{
+  "provided_source_tile": "N39E110.hgt",
+  "tile_shape": [
+    3601,
+    3601
+  ],
+  "tile_storage": "big-endian int16",
+  "tile_grid_spacing_degrees": 0.0002777777777777778,
+  "tile_nodata": -32768,
+  "actual_SARscape_input": "StudyArea_DEM_30m_bil",
+  "input_shape": [
+    1331,
+    1331
+  ],
+  "input_storage": "little-endian int16, 1 band",
+  "input_nodata": 32767,
+  "input_grid_spacing_degrees": 0.0002777777777777778,
+  "input_crs": "WGS84 longitude/latitude",
+  "input_used_by_final_SBAS": "FROM DEM record in final backup55 output metadata names this geographic DEM",
+  "tile_window_zero_based_half_open": {
+    "rows": [
+      901,
+      2232
+    ],
+    "columns": [
+      1441,
+      2772
+    ]
+  },
+  "matching_elevation_cells": 1771561,
+  "maximum_elevation_difference_m": 0,
+  "provenance_limit": "Manuscript calls source SRTM 30 m. Local tile identity confirmed; original provider release/version and vertical datum not independently established.",
+  "georeferencing_limit": "Numeric window match is not a proof of pixel-center/edge alignment. Original Point HGT and geographic ENVI conventions must be considered. No header or coordinate shifts were applied."
+}

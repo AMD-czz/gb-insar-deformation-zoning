@@ -1,0 +1,4 @@
+dataset,paper_use,public_material,provider_url,limitation
+Sentinel-1A SLC,SBAS regional LOS observations,"25 acquisition identifiers plus final backup55 LOS rasters, quality layers, masks and series",https://dataspace.copernicus.eu/data-collections/copernicus-sentinel-missions/sentinel-1,Original SAFE full identifiers not recovered; no SLC arrays included
+GPM IMERG V07 Late Run daily,Daily precipitation comparison,427-row rainfall-only table,https://disc.gsfc.nasa.gov/datasets/GPM_3IMERGDL_07/summary,"Satellite precipitation, not a mine gauge measurement"
+DEM (manuscript reports SRTM 30 m),Topographic context and SBAS reference elevation,Actual geographic SARscape DEM input plus numerically identical N39E110 source tile,,Local numerical provenance confirmed; original provider release/version and height datum remain unverified

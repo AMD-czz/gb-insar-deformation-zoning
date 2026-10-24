@@ -1,0 +1,32 @@
+{
+  "status": "partial_manuscript_reported_parameters_not_a_restored_project",
+  "source": "manuscript.docx, Sec. 3.4; scope/metadata checked against supplied release, original SARscape project not available in package",
+  "software": "SARscape 5.6.0",
+  "images": 25,
+  "interferometric_pairs_reported": 102,
+  "maximum_temporal_baseline_days": 60,
+  "maximum_perpendicular_baseline_m": 200,
+  "filter": "Goldstein (numeric settings not recovered)",
+  "unwrapping": "minimum-cost-flow (numeric settings not recovered)",
+  "processing_steps_reported": [
+    "coregistration",
+    "differential interferometry",
+    "filtering",
+    "phase unwrapping",
+    "GCP refinement",
+    "two inversion steps",
+    "atmospheric phase processing",
+    "geocoding"
+  ],
+  "not_recovered": [
+    "original SAFE product identifiers",
+    "exact precise-orbit associations",
+    "reference/control-point inputs",
+    "coherence threshold",
+    "Goldstein numeric parameters",
+    "unwrapping settings",
+    "inversion settings",
+    "atmospheric filtering settings"
+  ],
+  "reproducibility": "Supplied rasters support postprocessing checks, not exact raw-SLC inversion reproduction."
+}

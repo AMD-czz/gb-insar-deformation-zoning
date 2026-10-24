@@ -1,0 +1,44 @@
+{
+  "input": "examples/synthetic_preprocessed.npz",
+  "input_stage": "preprocessed",
+  "output": "outputs/run",
+  "grid_shape": [
+    30,
+    40
+  ],
+  "window": 9,
+  "sample_size": 1000,
+  "seed": 42,
+  "k": 2,
+  "contamination": 0.05,
+  "dtw_radius": 50,
+  "include_kshape": true,
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    1011
+  ],
+  "k_values": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "windows": [
+    1,
+    3,
+    5,
+    7,
+    9
+  ],
+  "contamination_values": [
+    0,
+    0.01,
+    0.03,
+    0.05,
+    0.1
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "final_version": "backup_55/geocoding/raster",
+  "epochs": 25,
+  "start_date": "2025-08-16",
+  "end_date": "2026-06-24",
+  "reference_date": "2025-08-16",
+  "quantity": "ascending Sentinel-1A LOS; not independent vertical displacement",
+  "grid_shape": [
+    1775,
+    1775
+  ],
+  "coordinate_system": "WGS84 longitude/latitude",
+  "pixel_spacing_degrees": [
+    0.000208325,
+    0.000208325
+  ],
+  "nodata": "NaN",
+  "velocity_units": "mm/year",
+  "displacement_units": "mm",
+  "software": "SARscape 5.6.0",
+  "polygon_cells": 4564,
+  "valid_velocity_cells": 2724,
+  "mean_velocity_mm_year": -31.447738647460938,
+  "minimum_velocity_mm_year": -121.173583984375,
+  "fixed_min_velocity_point_zero_based_row_col": [
+    899,
+    898
+  ],
+  "sign_interpretation": "The manuscript interprets negative LOS as motion away from the satellite; retain original convention.",
+  "mask_method": "Retained mask used for manuscript statistics; full-grid boolean .npy masks explicitly supplied.",
+  "original_files_unmodified": true
+}

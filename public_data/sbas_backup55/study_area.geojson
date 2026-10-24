@@ -1,0 +1,38 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "role": "published study polygon"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              110.579135,
+              39.563471
+            ],
+            [
+              110.597645,
+              39.56324
+            ],
+            [
+              110.597512,
+              39.552552
+            ],
+            [
+              110.579002,
+              39.552782
+            ],
+            [
+              110.579135,
+              39.563471
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

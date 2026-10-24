@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+outputs/
+.venv/
+.env
+*.log
+restricted_data/
+ground_radar_raw/
+private_inputs/
+credentials/
+.git/

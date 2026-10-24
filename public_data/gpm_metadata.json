@@ -1,0 +1,22 @@
+{
+  "days": 427,
+  "start": "2025-05-01",
+  "end": "2026-07-01",
+  "S6_days": 71,
+  "S6_total_mm": 99.3,
+  "S6_days_ge5mm": 6,
+  "columns": [
+    "date",
+    "precip_mm"
+  ],
+  "product": "GPM_3IMERGDL_07",
+  "run": "Late",
+  "version": "07",
+  "grid_latitude": 39.55,
+  "grid_longitude": 110.55,
+  "contains_mine_displacement": false,
+  "doi": "10.5067/GPM/IMERGDL/DAY/07",
+  "provider_url": "https://disc.gsfc.nasa.gov/datasets/GPM_3IMERGDL_07/summary",
+  "units": "mm/day; daily accumulation",
+  "processing": "Retained two-decimal extracted daily table; not a ground rain gauge. Product day labels retained without inferring local rain end time."
+}
