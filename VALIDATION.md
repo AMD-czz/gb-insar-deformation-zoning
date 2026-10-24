@@ -1,3 +1,15 @@
+# Validation update for v1.1.1
+
+Checked on 2026-10-24. All 8 scientific/I-O unit tests passed again after text normalization. All 34 binary files remain byte-identical to v1.1. No scientific code logic or observed satellite data values were changed in this maintenance release.
+
+Git attributes were checked: README uses text/eol=lf; extensionless ENVI velocity rasters and HGT are -text. A local Git commit and ZIP archive export passed raw-byte manifest verification. A separate Git index checkout with core.autocrlf=true also passed. A full local clone attempt was blocked by the sandbox's Git shell permissions; checkout-index was used to test worktree conversion instead. The actual future GitHub download should still be checked with tools/manifest.py verify.
+
+Run `python tools/manifest.py verify` after extracting a download. The manifest excludes itself and ignores Git internals, output folders, virtual environments, and Python caches. After an intentional edit, regenerate it before committing. Verification does not normalize input bytes or hide line-ending mismatches.
+
+The earlier full-workflow validation below remains applicable to the unchanged scientific implementation. It is not a fresh repeat of all workflow commands in v1.1.1.
+
+---
+
 # Validation of submission package v1.1.0
 
 Checked on 2026-10-24. See environment/VALIDATION_ENVIRONMENT.json. An existing environment matched the pinned versions; this is not a fresh-install certification.

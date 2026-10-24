@@ -1,4 +1,4 @@
-# GB-InSAR deformation zoning — submission package v1.1
+# GB-InSAR deformation zoning — submission package v1.1.1
 
 Companion analysis code for **Deformation zoning for open-pit mines using ground-based interferometric synthetic aperture radar**. Corresponding author: Zhuangzhuang Chen, 2025220214@jou.edu.cn.
 
@@ -62,3 +62,7 @@ The public implementation starts after proprietary decoding and screening. Archi
 ## Rights
 
 Public inspection does not mean an open-source license. See LICENSE for the existing author rights notice; obtain permission for uses not granted there. Third-party data retain provider terms. Do not apply a repository-wide MIT or CC BY license without authorization. The release does not independently establish dataset provenance or legal redistribution rights.
+
+## Byte integrity and line endings
+
+.gitattributes stores known text formats with LF endings and preserves all other files as binary, including extensionless ENVI rasters. Do not change binary files to text. Run `python tools/manifest.py verify` after download. After intentional changes, run `python tools/manifest.py generate` before committing, then verify again. FILE_MANIFEST.csv excludes itself. Version v1.1.1 fixes newline-related checksum mismatches in the prior upload.

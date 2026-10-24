@@ -9,7 +9,7 @@
 ## GitHub
 Create an empty repository (or initialize it with a README only if you will avoid duplicate files). Upload the CONTENTS of this folder so README.md is at the repository root. The package contains large satellite products: browser upload may need multiple batches, each at most 100 files and each file at most 25 MiB. Prefer GitHub Desktop for the complete directory; alternatively archive large public satellite products externally and update all paths/docs before splitting the package. Do not delete only binaries while retaining claims they are bundled.
 
-Commit the checked files, then create a `v1.1.0` release. Use a descriptive release title, record the manuscript version, and do not claim a DOI unless one has actually been assigned. Open the public repository in a signed-out window and verify source/download access. Ordinary private repository URLs do not grant anonymous reviewers access. Paste the actual accessible code URL into the JARS submission form.
+Commit the checked files, then create a `v1.1.1` release. Use a descriptive release title, record the manuscript version, and do not claim a DOI unless one has actually been assigned. Open the public repository in a signed-out window and verify source/download access. Ordinary private repository URLs do not grant anonymous reviewers access. Paste the actual accessible code URL into the JARS submission form.
 
 ## Manuscript issues requiring author verification
 - The retained smoothing implementation keeps the FIRST N-T+1 nearest-endpoint-smoothed values. With 71 rows/T=9, original index labels are 0..62; no +4-day offset is applied. Verify Fig. 3 dates against the original plotting workflow. This package does not silently change that method.
@@ -24,3 +24,7 @@ Commit the checked files, then create a `v1.1.0` release. Use a descriptive rele
 - Archived timing includes omitted decoding. Do not compare demo times as repetitions of paper timings.
 
 This folder is a submission-ready software package with explicitly documented limits, not certification of editorial acceptance or full scientific reproducibility.
+
+## Byte integrity and line endings
+
+.gitattributes stores known text formats with LF endings and preserves all other files as binary, including extensionless ENVI rasters. Do not change binary files to text. Run `python tools/manifest.py verify` after download. After intentional changes, run `python tools/manifest.py generate` before committing, then verify again. FILE_MANIFEST.csv excludes itself. Version v1.1.1 fixes newline-related checksum mismatches in the prior upload.

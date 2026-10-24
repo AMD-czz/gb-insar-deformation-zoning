@@ -1,0 +1,25 @@
+# Default to byte-preserving storage for extensionless ENVI rasters and binary data.
+* -text
+# Explicit text formats: canonical LF both in the repository and on checkout.
+*.py text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.json text eol=lf
+*.geojson text eol=lf
+*.csv text eol=lf
+*.hdr text eol=lf
+*.prj text eol=lf
+.gitattributes text eol=lf
+.gitignore text eol=lf
+LICENSE text eol=lf
+# Explicit binary protection, in addition to the byte-preserving default.
+*.npy -text
+*.npz -text
+*.hgt -text
+*.h5 -text
+*.hdf5 -text
+*.tif -text
+*.tiff -text
+*.png -text
+*.pdf -text
+*.zip -text
