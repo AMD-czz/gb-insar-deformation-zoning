@@ -1,0 +1,6 @@
+{
+  "feature_max_abs_difference": 0.0,
+  "common_inlier_count": 47500,
+  "recomputed_IF_mask_exact": true,
+  "sample_ARI_vs_archived": 1.0
+}

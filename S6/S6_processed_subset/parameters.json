@@ -1,0 +1,30 @@
+{
+  "stage": "coverage-screened, segment-referenced, T9 smoothed; before IF and robust scaling",
+  "sample_size": 50000,
+  "smoothed_epochs": 63,
+  "T": 9,
+  "smoothing": "centered nearest endpoint, first N-T+1 outputs",
+  "final_displacement": "unsmoothed final segment-relative value",
+  "trend_axis": "frame index 0..62",
+  "kappa": "quadratic coefficient a2, NOT 2*a2",
+  "sample_seed": 42,
+  "model_seed": 42,
+  "contamination": 0.05,
+  "k": 2,
+  "n_init": 10,
+  "model": "KMeans centers projected to nearest actual inlier sample",
+  "row_order": "original sorted training sample order retained; anonymous sample IDs replace grid identity",
+  "excluded": [
+    "raw radar observations",
+    "decoder or protocol",
+    "grid_pos or original sample positions",
+    "coordinates and radar layout",
+    "full-field labels"
+  ],
+  "limits": [
+    "cannot reproduce raw screening/decoding",
+    "cannot reproduce full-field geometry or LCC/adjacent agreement",
+    "no original spatial indices, so cannot reproduce spatial feature augmentation"
+  ],
+  "publication_note": "The enclosing GitHub release identifies publication status and version; this metadata does not assert that a local copy has been published."
+}
