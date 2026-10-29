@@ -12,7 +12,7 @@ PCA and single-reference DTW replace the feature construction while retaining th
 
 PCS is the unweighted mean of within-cluster majority displacement-sign fractions; exact zero values belong to neither sign. Spatial agreement counts only valid horizontal/vertical pixel pairs once. LCC uses four-neighbor connectivity and divides the largest focus-component size by the focus-pixel count. ARI measures label agreement, not accuracy.
 
-The parameter command preserves common 3D inliers for k/seed scans. Contamination output fixes k; it is not evidence that k stays optimal under all contamination settings. Window scanning needs decoded_referenced input. Other segments can be processed with separate configs; no mine segment arrays are bundled.
+The parameter command preserves common 3D inliers for k/seed scans. Contamination output fixes k; it is not evidence that k stays optimal under all contamination settings. Window scanning needs decoded_referenced input. Other segments can be processed with separate configs; no full-field mine segment arrays are bundled; a processed 50,000-row S6 training subset is provided separately under S6/.
 
 Rainfall response uses differences of zone median unsmoothed displacement. This is not the median of per-pixel differences. Lag is explicitly an observation-row lag; elapsed-day gaps are retained. SBAS code only postprocesses independently provided ENVI rasters and a declared polygon mask; it does not replicate SARscape inversion or provide independent ground truth.
 

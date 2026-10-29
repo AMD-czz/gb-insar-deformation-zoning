@@ -54,3 +54,7 @@ Checked on 2026-10-24. See environment/VALIDATION_ENVIRONMENT.json. An existing 
 - Demo ARI=1 across the window scan belongs to synthetic inputs, not the manuscript observations.
 - Figures were generated; the synthetic partition image was visually inspected.
 - No new data access rights, confidentiality agreements or licenses are inferred from successful execution.
+
+## Added S6 sample check on 2026-10-29
+
+The exact downloaded S6 reproduction script exited successfully: feature difference 0.0, 47,500 inliers, IF mask exact, ARI_sample 1.0. The ten main-branch S6 files were downloaded anonymously and matched the local snapshot byte-for-byte. These checks do not validate all PCA/DTW/KShape results, original decoding or full-field spatial statistics. Subset CHECKSUMS.csv and root FILE_MANIFEST.csv were regenerated after the documentation update; numerical NPZ/CSV arrays were not changed.

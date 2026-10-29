@@ -1,15 +1,9 @@
 # Code, data and materials availability
 
-## Code
-The portable analysis scripts are included here. The authors must insert the actual repository URL and version/commit in the manuscript after upload. No URL or DOI is invented in this package. The rights notice is in LICENSE; this release does not change the coauthors' licensing decisions.
+The repository contains analysis code, public-source precipitation inputs, Sentinel-1 acquisition metadata, final satellite SBAS products, documented DEM inputs and a processed S6 training subset. See public_data/ and S6/S6_processed_subset/ for contents and provenance limits.
 
-## Included observations and derived satellite products
-Public-source GPM IMERG V07 rainfall extraction, Sentinel-1 acquisition identifiers, the retained DEM inputs, and final geocoded satellite SBAS products are included. Their precise scope and provenance limitations are documented in public_data/. Public-source origin is not itself proof of unrestricted redistribution. Provider terms still apply. The manuscript describes the geographic mine location, and the released satellite rasters/masks disclose regional spatial results.
+The S6 subset contains 50,000 measured-data-derived samples, each with 63 retained smoothed displacement values, an unsmoothed final segment-relative displacement, three physical features, a common inlier flag and a reference label. It supports sample-level feature derivation, Isolation Forest screening, robust standardization and projected-center clustering. It provides inputs for further sample-level comparisons, not a claim that every manuscript table has been revalidated. Original spatial/sample-position identifiers are absent.
 
-## Excluded ground-based radar material
-Original GB-InSAR mine observations, associated proprietary decoder and protocol, ground-radar pixel features/labels, and ground-radar displacement curves are not supplied. Consequently, the full original mine-zoning experiment cannot be independently reproduced from this release alone. Synthetic examples demonstrate software operation only.
+Original site GB-InSAR observations, proprietary protocol/decoder and restricted full-field ground-radar arrays remain excluded. Complete raw processing and full-field spatial statistics cannot be independently reconstructed from this release alone. Synthetic examples remain separate from the measured-data-derived S6 subset. Dataset access does not establish independent physical accuracy or confer rights beyond the existing author/provider notices.
 
-The authors have chosen not to publish the original ground-radar observations in this release. The actual ownership, contractual restrictions, and any permitted review/access arrangements must be confirmed by the authors and data owner. This document does NOT assert a confidentiality agreement or promise data on request without evidence.
-
-## Suggested manuscript structure — complete before submission
-Describe the code URL/version; public data sources; the specific GB-InSAR restriction and its verified basis; any permitted access procedure; and the limits of reproducibility. Put the statement after Disclosures and before Acknowledgments. Do not submit placeholders or say all supporting data are public.
+S6 was added after v1.1.1. Cite the actual new version/commit that contains it in the manuscript and submission form; do not claim that the unchanged v1.1.1 tag includes these samples. A source repository and data availability statement are not substitutes for authorization to distribute measured-data-derived materials.

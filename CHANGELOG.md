@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased — processed S6 sample subset
+- Added the 50,000-row processed S6 training subset and reproduction script.
+- Verified core sample-level feature, IF-mask and label agreement.
+- Updated availability/method documentation and file checksums.
+- Original raw radar observations/protocol and spatial identifiers remain excluded.
+
+
 ## v1.1.1 — 2026-10-24
 - Added explicit LF text rules and default binary protection in .gitattributes.
 - Added standard-library manifest generation/verification utility.

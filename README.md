@@ -1,10 +1,10 @@
-# GB-InSAR deformation zoning — submission package v1.1.1
+# GB-InSAR deformation zoning — submission package with processed S6 samples
 
 Companion analysis code for **Deformation zoning for open-pit mines using ground-based interferometric synthetic aperture radar**. Corresponding author: Zhuangzhuang Chen, 2025220214@jou.edu.cn.
 
 ## Scope and data boundaries
 
-This package contains the authors' portable analysis code, synthetic examples, public-source rainfall inputs, Sentinel-1 acquisition metadata, DEM inputs, and released final satellite SBAS products. The repository is being prepared for public submission by the authors. It contains **no original ground-based radar observations, proprietary radar decoder/protocol, ground-radar pixel features/labels, or ground-radar displacement series**. Satellite-derived study-area rasters, masks and coordinates ARE included; this is not a package with all mine-related spatial information removed.
+This package contains the authors' portable analysis code, synthetic examples, public-source rainfall inputs, Sentinel-1 acquisition metadata, DEM inputs, and released final satellite SBAS products. The repository is being prepared for public submission by the authors. It includes a processed S6 sample subset under `S6/S6_processed_subset/`: 50,000 rows of 63-epoch smoothed sequences, final displacements, derived features, a common inlier mask and reference labels. **Original ground-based radar observations, proprietary radar decoder/protocol, original spatial identifiers and restricted full-field ground-radar data are not included**. Satellite-derived study-area rasters, masks and coordinates ARE included; this is not a package with all mine-related spatial information removed.
 
 The synthetic example demonstrates execution; it does not reproduce the observed mine deformation. With the supplied satellite rasters, the regional SBAS summaries can be recalculated. Raw-SLC SARscape inversion and the full original ground-radar processing chain cannot be reproduced from this repository. See METHODS.md and DATA_AVAILABILITY.md.
 
@@ -66,3 +66,7 @@ Public inspection does not mean an open-source license. See LICENSE for the exis
 ## Byte integrity and line endings
 
 .gitattributes stores known text formats with LF endings and preserves all other files as binary, including extensionless ENVI rasters. Do not change binary files to text. Run `python tools/manifest.py verify` after download. After intentional changes, run `python tools/manifest.py generate` before committing, then verify again. FILE_MANIFEST.csv excludes itself. Version v1.1.1 fixes newline-related checksum mismatches in the prior upload.
+
+## Reproduce the measured-data-derived S6 subset
+
+Run `python S6/S6_processed_subset/reproduce_subset.py`. In the inspected environment, feature difference is 0, the 47,500-row inlier mask matches, and sample-label ARI is 1.0. These are computational agreement checks, not accuracy against independent field truth. No raw screening, full-field map or spatial LCC is reproduced from these samples. The subset was added after v1.1.1; cite a new release containing this commit.
